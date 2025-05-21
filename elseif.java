@@ -1,9 +1,30 @@
 import java.util.*;
 public class elseif{
     public static void main (String[]args){
-        int number  = 9;
-        String type  = (number %2 ==0 ) ? "even ":"odd";
+       Scanner sc  = new Scanner (System.in);
+       System.out.println("enter a :");
+       int a = sc.nextInt();  
+       System.out.println("enter b :");
+       int b = sc.nextInt();
+       System.out.println("enter operator: + - * / ");
+       char operator = sc.next().charAt(0);
 
-        System.out.println(type);
+       switch (operator){
+        case '+' :System.out.println(a+b);
+        break;
+
+        case '-' :System.out.println(a-b);
+        break;
+
+        case '*' :System.out.println(a*b);
+        break;
+
+        case '/' :System.out.println(a/b);
+        break;
+
+        default:System.out.println("all good");
+       }
+
+
     }
 } 
