@@ -2,27 +2,24 @@ import java.util.*;
 public class elseif{
     public static void main (String[]args){
        Scanner sc  = new Scanner (System.in);
-       System.out.println("enter a :");
-       int a = sc.nextInt();  
-       System.out.println("enter b :");
-       int b = sc.nextInt();
-       System.out.println("enter operator: + - * / ");
+       //int a = sc.nextInt(); 
+        System.out.println("enter a number :"); 
        char operator = sc.next().charAt(0);
 
        switch (operator){
-        case '+' :System.out.println(a+b);
+        case '1' :System.out.println("mon");
         break;
 
-        case '-' :System.out.println(a-b);
+        case '2' :System.out.println("tue");
         break;
 
-        case '*' :System.out.println(a*b);
+        case '3' :System.out.println("wed");
         break;
 
-        case '/' :System.out.println(a/b);
+        case '4' :System.out.println("thu");
         break;
 
-        default:System.out.println("all good");
+        default:System.out.println("good day");
        }
 
 
