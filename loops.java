@@ -1,23 +1,17 @@
 import java.util.*;
 public class loops {
-    public static void main(String[] args) {
-        int n = 10899;
-        int rev = 0;
-    
-        while(n >0){
-            int lastDigit = n % 10;
-            rev = (rev*10) + lastDigit;
-            n = n/10;
+    public static void main (String [] args){
+        Scanner sc = new Scanner (System.in);
 
+        do{
+            System.out.println("enter  your number ");
+            int n = sc.nextInt();
 
-        }
-        System.out.println( rev);
+            if (n % 10 == 0){
+                break;
+            }
+            System.out.println(n);
+        }while (true);
 
-    
-    
-        }
-        
     }
-    
-    
-
+}
