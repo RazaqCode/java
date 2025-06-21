@@ -1,9 +1,12 @@
 public class loops {
     public static void main (String [] args){
-        int a = 2;
-        int b = 2;
+        String input = "Hello, World!";
         
-        System.out.println(a + b);
-
+        // Method 1: Using StringBuilder
+        String reversed = new StringBuilder(input).reverse().toString();
+        
+        System.out.println("Original: " + input);
+        System.out.println("Reversed: " + reversed);
     }
 }
+
