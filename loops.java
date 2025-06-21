@@ -1,12 +1,9 @@
-import java.util.*;
 public class loops {
     public static void main (String [] args){
-        for (int line =1; line <= 4; line ++){
-            for (int star =1; star<=line; star++){
-                System.out.print("*");
-            }
-            System.out.println();
-        }
+        int a = 2;
+        int b = 2;
+        
+        System.out.println(a + b);
 
     }
 }
