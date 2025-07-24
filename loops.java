@@ -1,11 +1,15 @@
 public class loops {
     public static void main (String [] args){
-        int n = 4;
-        char ch = 'A'; // Starting character
-        for (int line = 1; line <= n; line++){
-            for(int characterCount = 1; characterCount <= line; characterCount++){
-                System.out.print(ch + " ");
-                ch++; // Increment character for the next print
+        int rows = 5; // You can adjust this for the number of rows
+        int cols = 7; // You can adjust this for the number of columns
+
+        for (int i = 1; i <= rows; i++) {
+            for (int j = 1; j <= cols; j++) {
+                if (i == 1 || i == rows || j == 1 || j == cols) {
+                    System.out.print("*");
+                } else {
+                    System.out.print(" ");
+                }
             }
             System.out.println();
         }
